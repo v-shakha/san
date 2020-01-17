@@ -1,0 +1,99 @@
+<html>
+<head>
+<title>HTML layouts</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=deivce-width, initial scale=1.0">
+<title>sanduk online store</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<BODY>
+	<div  ID="header">
+		<H1>SANDUKH</H1>
+		</div>
+		<!-- Load an icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<div class="navbar" id="myTopnav">
+<//img src="logo1.png" style="width:50px; height:50px; float:left; //padding:10px">
+  <a class="active" href="#"><i class="fa fa-fw fa-home"></i> Home</a>
+  <div class="dropdown">
+    <button class="dropbtn"><i class="fa fa-fw fa-shopping-cart"></i>Shop
+	</button>
+	<div class="dropdown-content">
+      <a href="#">Clothings</a>
+		
+      <a href="#">Accesories</a>
+      <a href="#">Shoes</a>
+    </div>
+  </div>
+  <a href="#"><i class="fa fa-fw fa-envelope"></i> Contact</a>
+  <a href="#"><i class="fa fa-fw fa-credit-card"> </i> Payment</a>
+  <a href="#"><i class="fa fa-fw fa-user"></i> Login</a>
+   <a href="#"><i class="fa fa-fw fa-user-plus"></i>SignUp</a>
+  <a href="#"><i class="fa fa-fw fa-question-circle"></i>Help</a>
+   <div class="search-container">
+    <form action="/action_page.php">
+      <input type="text" placeholder="Search.." name="search">
+      <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
+  </div>
+ 
+</div>
+<div class="sidenav">
+	<h3 style="text-align:justify;">
+	Clothings</h3>
+	<h4 style="text-align:justify;">
+	Women's wear
+	</h4>
+	<ul>
+	<li><a href="#">Summer</a></li>
+	<li><a href="#">Winter</a></li>
+	<li><a href="#">Partywear</a></li>
+	</ul>
+	<h4 style="text-align:justify;">
+	Men's wear</h4>
+	<ul>
+	<li><a href="#">Summer</a></li>
+	<li><a href="#">Winter</a></li>
+	<li><a href="#">Partywear</a></li>
+	</ul>
+	
+	<a href="#"><h3>Accesories</h3></a>
+	<a href="#"><h3>Shoes</h3></a>
+</div>
+	<div class="main">
+		  <img class="mySlides" src="2.JPG">
+		  <img class="mySlides" src="men1.jpg" >
+		  <img class="mySlides" src="shop.jpg" >
+
+Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus
+Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus
+Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus
+Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus
+Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus
+Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus
+Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus
+Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus
+		 </div> 
+	<div class="footer">
+	footer
+	</div>
+</body>
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 4000); // Change image every 2 seconds
+}
+
+</script>
+</HTML>

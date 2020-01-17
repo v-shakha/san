@@ -1,0 +1,101 @@
+<html>
+<head>
+<title>HTML layouts</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=deivce-width, initial scale=1.0">
+<title>sanduk online store</title>
+<link href="STYLE.css" rel="stylesheet" type="text/css">
+	
+</head>
+<BODY>
+	<div class="head" ID="HEADER">
+		<H1>SANDUKH</H1>
+		
+		
+		</div>
+		<!-- Load an icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<div class="navbar">
+<img src="logo1.png" style="width:50px; height:50px; float:left; //padding:10px">
+  <a class="active" href="#"><i class="fa fa-fw fa-home"></i> Home</a>
+  <div class="dropdown">
+    <button class="dropbtn"><i class="fa fa-fw fa-shopping-cart"></i>Shop
+	</button>
+	<div class="dropdown-content">
+      <a href="#">Clothings</a>
+		
+      <a href="#">Accesories</a>
+      <a href="#">Shoes</a>
+    </div>
+  </div>
+  
+  <a href="#"><i class="fa fa-fw fa-envelope"></i> Contact</a>
+  <a href="#"><i class="fa fa-fw fa-credit-card"> </i> Payment</a>
+  <a href="#"><i class="fa fa-fw fa-search"></i> Search</a>
+  
+  <a href="#"><i class="fa fa-fw fa-user"></i> Login</a>
+   <a href="#"><i class="fa fa-fw fa-user-plus"></i>SignUp</a>
+  <a href="#"><i class="fa fa-fw fa-question-circle"></i>Help</a>
+</div>
+	<!-- Side navigation -->
+<div class="sidenav">
+  
+	<h2 STYLE="COLOR:#999999;TEXT-ALIGN:CENTER;">CLOTHINGS</h2><BR>
+		<ul STYLE="TEXT-ALIGN:CENTER;">
+		 <li><H3 text-align="center">Womens' Wear</H3>
+			<ul>
+				 <a href="#"><li>Summer</li></a>
+				<a href="#"><li>Winter</li></A>
+			</ul>
+		</li>
+		</ul><BR>
+		<ul STYLE="TEXT-ALIGN:CENTER;">
+		 <li><H3>Mens' Wear</H3>
+			<ul>
+				 <a href="#"><li>Summer</li></a>
+				<a href="#"><li>Winter</li></A>
+			</ul>
+		</li>
+		</ul>
+		
+	<BR>
+	<BR>
+		
+ <H2 STYLE="TEXT-ALIGN:CENTER;"> <a href="#">ACCESORIES</a> </H2>
+ <BR>
+ 
+  <H2 STYLE="TEXT-ALIGN:CENTER;"><a href="#">SHOES</a></H2>
+
+</div>
+
+	<!-- Page content -->
+	<div class="main">
+				
+		<div class="w3-content w3-section" >
+		  <img class="mySlides" src="2020.JPG">
+		  <img class="mySlides" src="men1.jpg" >
+		  <img class="mySlides" src="women.jpg" >
+		</div>
+				
+	<div class="footer">
+	footer</div>
+	</div>
+</body>
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 4000); // Change image every 2 seconds
+}
+</script>
+</HTML>
